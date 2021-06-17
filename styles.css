@@ -79,7 +79,7 @@ body {
 }
 
 .hero {
-  background-image: url("/images/hero-image.png");
+  background-image: url("https://previews.dropbox.com/p/thumb/ABOkzzb-fyBgj3kr6Nw1cDkusHcG-CV84b-_HIgo9FPUHEiaILhC0z9tV3hSpY_qIa8PVznBCffEyk8t6d9wgv9bYVA4Zfmg407cUVXiH2hVFbsCRXVs1Bruh9oTil-5toUM9amdh6Bu6j8Wq93Sj-sNaD9cdFWtxl-HStCRgNRV51F5TLBZarmozpQ9ru0m-7jPuSsq3GKvHN9XLkbLWZtAqS0alvcrgQ0fNtbTBxz0wfRR1z9gUFELyssjhOJGmCV9M5ALhGJTVNriLwMCEsAN39LBve32J2_mIw1PDxZ4oBHPt1KPkhiuH7KF2Frii7UUDMx02tUy-Ofsj89NFPm89xnXqP4HeEeKQdgkxgYzCQ/p.png?fv_content=true&size_mode=5");
   background-position: center center;
   background-size: cover;
   display: flex;
@@ -239,6 +239,12 @@ body {
   margin: auto;
 }
 
+.about {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  }
+
 .media-about {
   display: flex;
   flex-direction: row;
@@ -301,6 +307,7 @@ body {
   line-height: 18px;
   padding: 50px;
   margin: auto;
+  max-width: 750px;
 }
 
 .about-jess .about-p {
@@ -396,6 +403,11 @@ footer p {
 
   .hero-about {
     font-size: 24px;
+  }
+
+  .about-p {
+    max-width: 900px;
+    margin: 0;
   }
 }
 
