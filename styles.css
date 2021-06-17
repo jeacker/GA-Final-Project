@@ -1,0 +1,489 @@
+body {
+  margin: 0px;
+}
+
+.nav {
+  background: white;
+  border-bottom: 2px solid black;
+  padding: 19px;
+  width: 100%;
+  top: 0;
+  position: fixed;
+  z-index: 10;
+}
+
+.container {
+  display: inline-block;
+  cursor: pointer;
+  float: right;
+  padding: 0;
+  margin-right: 30px;
+  z-index: 30;
+  position: fixed;
+  right: 0;
+  top: 11px;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  width: 35px;
+  height: 2px;
+  background-color: #333;
+  margin: 2px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(7px, 1px);
+  transform: rotate(-45deg) translate(1px, 7px);
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-7px, 1px);
+  transform: rotate(45deg) translate(1px, -7px);
+}
+
+.menu {
+  background-color: rgba(255, 255, 255, 0.8);
+  bottom: 0;
+  right: 0;
+  top: 0;
+  width: 350px;
+  overflow-y: scroll;
+  padding: 15px 30px;
+  position: fixed;
+  transition: all 0.5s ease-in-out;
+}
+
+#menu-opacity {
+  opacity: 0;
+}
+
+.menu a,
+.menu a:focus,
+.menu a:visited {
+  color: black;
+  opacity: 1;
+  display: block;
+  margin: 40px auto;
+  text-align: center;
+  text-decoration: none;
+  font-family: "Playfair Display", serif;
+  font-size: 25px;
+  font-style: italic;
+}
+
+.hero {
+  background-image: url("/images/hero-image.png");
+  background-position: center center;
+  background-size: cover;
+  display: flex;
+  align-content: center;
+  height: 400px;
+  position: relative;
+  margin-top: 40px;
+}
+
+.hero-text {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  margin-left: 40px;
+}
+
+.hero-author {
+  margin: 0px;
+  font-family: "Playfair Display", serif;
+  font-size: 30px;
+  font-style: italic;
+}
+
+.hero-title {
+  margin: 0px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 70px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.hero-subtitle {
+  font-family: "Montserrat", sans-serif;
+  font-weight: normal;
+  margin: 0px;
+  font-size: 32px;
+}
+
+.hero-about {
+  font-family: "Montserrat", sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+.intro {
+  max-width: 660px;
+  text-align: center;
+  margin: 50px auto;
+  padding: 0 50px;
+  font-family: "Playfair Display", serif;
+  font-weight: normal;
+}
+
+.collapsible {
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  align-content: center;
+  margin: 10px 0px;
+  background-image: linear-gradient(to right, #6445bc, #75afe1);
+}
+
+.active,
+.collapsible:hover {
+  background-image: linear-gradient(to right, #75afe1, #6445bc);
+}
+
+.content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.header-intro {
+  font-family: "Playfair Display", serif;
+  color: white;
+  font-style: italic;
+  text-align: center;
+  margin: 5px;
+  font-size: 20px;
+}
+
+.header-main {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: white;
+  text-align: center;
+  margin: 5px;
+  font-size: 30px;
+}
+
+.main-law {
+  display: flex;
+  justify-content: space-between;
+  margin: 80px;
+  border-top: 2px solid black;
+  background-image: linear-gradient(rgba(238, 242, 244, 1), rgba(255, 0, 0, 0));
+}
+
+.about-law {
+  text-align: center;
+  margin: auto;
+  padding: 50px;
+  width: 300px;
+}
+
+.about-law h1 {
+  font-size: 40px;
+  font-family: "Playfair Display", serif;
+}
+
+.number {
+  font-size: 50px;
+  font-style: italic;
+  font-weight: 600;
+}
+
+.about-law p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: normal;
+  font-size: 25px;
+}
+
+.subsequents {
+  border-left: 2px solid;
+  border-image: linear-gradient(to bottom, black, rgba(0, 0, 0, 0)) 1 100%;
+  padding-left: 20px;
+  width: 900px;
+}
+
+.sub-law {
+  display: flex;
+  justify-items: flex-start;
+  align-items: center;
+}
+
+.sub-law h2 {
+  font-size: 30px;
+  font-family: "Playfair Display", serif;
+}
+
+.sub-law p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: normal;
+  font-size: 15px;
+  padding: 20px;
+}
+
+.bad-section .main-law {
+  padding: 0;
+}
+
+.bad-section .subsequents {
+  margin: auto;
+}
+
+.media-about {
+  display: flex;
+  flex-direction: row;
+}
+
+.about-james {
+  display: flex;
+  align-items: center;
+  padding: 15px 100px;
+}
+
+.about-jess {
+  display: flex;
+  align-items: center;
+  padding: 15px 100px;
+}
+
+.james-headline {
+  margin-top: 45px;
+}
+
+.jess-headline {
+  margin-top: 45px;
+}
+
+.james-headline h3,
+.james-headline h2 {
+  text-align: right;
+  margin: 0 0 0 -40px;
+  padding: 0;
+  line-height: 15px;
+}
+
+.jess-headline h3,
+.jess-headline h2 {
+  text-align: left;
+  margin: 0 -40px 0 0;
+  padding: 0;
+  line-height: 15px;
+  z-index: 5;
+}
+
+.about-headline h3 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: normal;
+  font-size: 30px;
+}
+
+.about-headline h2 {
+  font-family: "Playfair Display", serif;
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 55px;
+}
+
+.about-p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+  padding: 50px;
+  margin: auto;
+}
+
+.about-jess .about-p {
+  text-align: right;
+}
+
+.about-p a:link {
+  color: black;
+}
+
+.about-p a:visited {
+  color: black;
+}
+
+.about-p a:hover {
+  color: #6445bc;
+}
+
+.about-p a:active {
+  color: black;
+}
+
+.james-photo,
+.jess-photo {
+  width: 250px;
+  height: 250px;
+  z-index: -1;
+}
+
+footer {
+  background-image: linear-gradient(to right, #6445bc, #75afe1);
+  padding: 40px;
+  padding-bottom: 100px;
+}
+
+.thanks {
+  font-family: "Playfair Display", serif;
+  color: white;
+  text-align: center;
+  font-style: italic;
+  font-size: 15px;
+  padding-bottom: 20px;
+  margin: 0;
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  margin: 0 200px;
+  font-family: "Montserrat", sans-serif;
+}
+
+footer a:link {
+  color: white;
+  text-decoration: none;
+}
+
+footer a:visited {
+  color: #d0c7ea;
+}
+
+footer a:hover {
+  color: #d0c7ea;
+}
+
+footer a:active {
+  color: white;
+}
+
+footer p {
+  font-family: "Playfair Display", serif;
+  color: white;
+  text-align: center;
+  font-style: italic;
+  font-size: 12px;
+  padding-top: 40px;
+  margin: 0;
+}
+
+@media screen and (min-width: 1500px) {
+  .hero-author {
+    font-size: 40px;
+  }
+
+  .hero-title {
+    font-size: 100px;
+  }
+
+  .hero-subtitle {
+    font-size: 50px;
+  }
+
+  .hero-about {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .main-law {
+    flex-direction: column;
+    justify-items: center;
+    margin: 40px;
+  }
+
+  .about-law {
+    padding: 0;
+  }
+
+  .about-law h1 {
+    font-size: 30px;
+    margin: 40px;
+  }
+
+  .number {
+    font-size: 40px;
+  }
+
+  .subsequents {
+    border-left: none;
+    border-image: none;
+    padding: 0;
+    width: auto;
+  }
+
+  .sub-law {
+    margin: 10px 30px;
+  }
+
+  .sub-law p {
+    padding: 20px 0 20px 20px;
+  }
+
+  .bad-section .main-law {
+    padding: 0;
+  }
+
+  .bad-section .subsequents {
+    margin: auto;
+  }
+
+  .about-james {
+    flex-direction: column;
+  }
+
+  .about-jess {
+    flex-direction: column;
+  }
+
+  .about-james {
+    margin-top: 100px;
+    margin-bottom: -40px;
+  }
+
+  .about-jess {
+    margin-top: -40px;
+    margin-bottom: 100px;
+  }
+
+  .about-jess .about-p {
+    text-align: left;
+  }
+
+  .line {
+    border-top: 2px solid black;
+    margin: 0 100px;
+  }
+
+  .links {
+    margin: 0 20px;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .hero {
+    background-position: 55% 0;
+    height: 500px;
+  }
+
+  .hero-text {
+    padding: 20px;
+    margin: 40px;
+  }
+}
