@@ -1,4 +1,4 @@
-// burger menu
+// burger menu open and close
 const burgerMenu = document.getElementById("menu-hamburger");
 
 function myFunction() {
@@ -13,12 +13,21 @@ function myFunction() {
 
 burgerMenu.addEventListener("click", myFunction);
 
-// collapsible
+// auto close burger menu once item is choosen
+const menuLink1 = document.getElementById("aIntro");
+const menuLink2 = document.getElementById("good-menu-but");
+const menuLink3 = document.getElementById("bad-menu-but");
+const menuLink4 = document.getElementById("aAbout");
+menuLink1.addEventListener("click", myFunction);
+menuLink2.addEventListener("click", myFunction);
+menuLink3.addEventListener("click", myFunction);
+menuLink4.addEventListener("click", myFunction);
+
+// collapsible elements
 var coll = document.getElementsByClassName("collapsible");
 var i;
 
 for (i = 0; i < coll.length; i++) {
-  console.log("test");
   coll[i].addEventListener("click", function () {
     this.classList.toggle("active");
     var content = this.nextElementSibling;
